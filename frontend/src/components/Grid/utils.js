@@ -32,7 +32,7 @@ export const perBreakpoint = (
   return {
     desktop: value.desktop || defaultValue,
     laptop: value.laptop || value.desktop || defaultValue,
-    tablet: value.tablet || value.desktop || defaultValue,
+    tablet: value.tablet || value.mobile || defaultValue,
     mobile: value.mobile || defaultValue,
   };
 };

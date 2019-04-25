@@ -1,0 +1,57 @@
+body,
+div[class^='bx--'],
+input[class^='bx--'],
+select[class^='bx--'] {
+  background-color: white;
+}
+
+h2 {
+  font-size: 1.8rem;
+  letter-spacing: 0.06rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: #25333d;
+  text-align: center;
+}
+
+.bx--label,
+.bx--form__helper-text,
+.bx--text-input,
+.bx--select-input {
+  font-size: 1rem;
+  letter-spacing: -0.02rem;
+  line-height: 1.1rem;
+  color: #25333d;
+  height: unset;
+}
+.bx--label {
+  font-weight: bold;
+}
+.bx--form__helper-text {
+  color: #879299;
+}
+.bx--text-input,
+.bx--text-input[disabled]:hover,
+.bx--select-input {
+  min-width: unset;
+  border: 2px solid rgba(171, 185, 194, 0.32);
+  border-radius: 4px;
+  padding: 1.2rem 0.5rem;
+}
+.bx--text-input,
+.bx--text-input:focus,
+.bx--select-input,
+.bx--select-input:focus {
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+.bx--form-item {
+  position: relative;
+}
+.bx--text-input.optional + .bx--form__helper-text {
+  position: absolute;
+  right: 20px;
+}
+.bx--select {
+  width: 100%;
+}

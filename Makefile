@@ -31,6 +31,11 @@ django-test:
 django-ssh:
 	docker-compose exec -d django bash -c "/usr/bin/ssh-keygen -A; /usr/sbin/sshd -D"
 	ssh -p9022 root@localhost -t 'cd /usr/src/app; bash -l'
+
+.PHONY: django-debug
+django-debug:
+	ssh-keygen -R '[localhost]:8022'
+	docker-compose exec -d django bash -c "/usr/bin/ssh-keygen -A; /usr/sbin/sshd -D"
 # ==================================================
 
 
